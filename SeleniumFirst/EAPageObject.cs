@@ -35,11 +35,20 @@ namespace SeleniumFirst
 
         public void FillUserForm(string initial, string firstName, string middleName)        // moze byc void bo nie zwraca nam potem zadnego obiektu
         {
-            SeleniumSetMethods.SelectDropDown(ddTitleID, "Mr.");
-            SeleniumSetMethods.EnterText(txtInitial, initial);
-            SeleniumSetMethods.EnterText(txtFirstName, firstName);
-            SeleniumSetMethods.EnterText(txtMiddleName, middleName);
-            SeleniumSetMethods.Click(btnSave);
+
+            ddTitleID.SelectDropDown("Mr.");
+            txtInitial.EnterText(initial);
+            txtFirstName.EnterText(firstName);
+            txtMiddleName.EnterText(middleName);
+            
+            
+            
+            
+            //SeleniumSetMethods.SelectDropDown(ddTitleID, "Mr.");
+            //SeleniumSetMethods.EnterText(txtInitial, initial);
+            //SeleniumSetMethods.EnterText(txtFirstName, firstName);
+            //SeleniumSetMethods.EnterText(txtMiddleName, middleName);
+            //SeleniumSetMethods.Click(btnSave);
         }
     }
 }

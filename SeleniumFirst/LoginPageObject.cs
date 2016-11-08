@@ -27,12 +27,21 @@ namespace SeleniumFirst
 
         public EAPageObject Login (string userName, string password) // zamiast voida dajemy EaPageObject, czyliz wroci nam widok po zalogowaniu
         {
-            //UserName
-            SeleniumSetMethods.EnterText(txtUserName, userName);
-            //Password
-            SeleniumSetMethods.EnterText(txtPassword, password);
-            //Click button
+
+
+            txtUserName.EnterText(userName);
+            txtPassword.EnterText(password);
             btnLogin.Submit();
+            
+            
+            
+            
+            ////UserName
+            //SeleniumSetMethods.EnterText(txtUserName, userName);
+            ////Password
+            //SeleniumSetMethods.EnterText(txtPassword, password);
+            ////Click button
+            //btnLogin.Submit();
             
 
             // Return a new object 

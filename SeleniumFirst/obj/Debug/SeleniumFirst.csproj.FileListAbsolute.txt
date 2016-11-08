@@ -2,7 +2,6 @@ C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\SeleniumFirst.exe.conf
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\SeleniumFirst.exe
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\SeleniumFirst.pdb
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.dll
-C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.mocks.dll
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\Selenium.WebDriverBackedSelenium.dll
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\ThoughtWorks.Selenium.Core.dll
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.dll
@@ -16,3 +15,14 @@ C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.xml
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.Support.xml
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.exe
 C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.pdb
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\mock-assembly.exe
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.tests.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.testdata.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunitlite-runner.exe
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunitlite.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\nunitlite.tests.exe
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\slow-nunit-tests.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\Excel.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\bin\Debug\Excel.pdb
+C:\C#\Automatyzacja\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.csprojResolveAssemblyReference.cache

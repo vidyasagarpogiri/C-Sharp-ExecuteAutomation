@@ -24,7 +24,7 @@ namespace SeleniumFirst
         public void Initialize()
         {
 
-            PropertiesToChromeDriver.chrome = new ChromeDriver(@"C:\C#\"); // tworzenie inicjalizacji do drivera w kalsie PropertiesToChromeDriver
+            PropertiesToChromeDriver.chrome = new ChromeDriver(); // tworzenie inicjalizacji do drivera w kalsie PropertiesToChromeDriver
             
             // Nawigacja do Google
             PropertiesToChromeDriver.chrome.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
@@ -49,8 +49,6 @@ namespace SeleniumFirst
             //Console.WriteLine("Wprowadzan Inicjał");
             //page.btnSave.Click();
             //Console.WriteLine("Kilkam Save");
-            
-            
             
             
             
