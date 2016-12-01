@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Excel;
 using System.Data;
 using System.IO;
+using System.Threading.Tasks;
+
+
 
 namespace SeleniumFirst
 {
@@ -32,16 +34,17 @@ namespace SeleniumFirst
 
 
 
-        List <Datacollection> dataCol = new List<Datacollection>();
+        static List<Datacollection> dataCol = new List<Datacollection>();
 
-        public void PopulateInCollection(string fileName)
+
+        public static void PopulateInCollection(string fileName)
         {
             DataTable table = ExcelToDataTable(fileName);
 
             //Iterate through the rows and columns of the Table
-            for (int row = 1; row <= table.Rows.Count; row++)
+            for (int row = 1; row <= table.Rows.Count; row++)       //1
             {
-                for (int col = 0; col <= table.Columns.Count; col++)
+                for (int col = 0; col < table.Columns.Count; col++) //0
                 {
                     Datacollection dtTable = new Datacollection()
                     {
@@ -56,7 +59,7 @@ namespace SeleniumFirst
         }
 
 
-        public string ReadData(int rowNumber, string columnName)
+        public static string ReadData(int rowNumber, string columnName)
         {
             try
             {
@@ -68,11 +71,14 @@ namespace SeleniumFirst
                 //var datas = dataCol.Where(x => x.colName == columnName && x.rowNumber == rowNumber).SingleOrDefault().colValue;
                 return data.ToString();
             }
+
+
             catch (Exception e)
             {
                 return null;
             }
         }
+    }
 
 
 
@@ -84,5 +90,5 @@ namespace SeleniumFirst
         }
 
 
-    }
+    
 }

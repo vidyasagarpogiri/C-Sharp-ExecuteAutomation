@@ -8,6 +8,10 @@ using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
+using System.IO;
+using Excel;
+using System.Data;
+
 
 namespace SeleniumFirst
 {
@@ -29,18 +33,28 @@ namespace SeleniumFirst
             // Nawigacja do Google
             PropertiesToChromeDriver.chrome.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Console.WriteLine("Open URL");
+
         }
 
         [Test]
         public void ExecuteTest()
         {
 
+            ExcelLiblary.PopulateInCollection(@"C:\C#\Automatyzacja\ExcellData\DataFromExcel.xlsx"); //referencja do pliku excela
+           
+           
+
             //Login to application
             LoginPageObject pageLogin = new LoginPageObject();
-            EAPageObject pageEA = pageLogin.Login("Mateusz", "Zarczynski");
 
-            pageEA.FillUserForm("M.Ż", "Mateusz", "Żarczyński");
+            EAPageObject pageEA = pageLogin.Login(ExcelLiblary.ReadData(1, "UserName"), ExcelLiblary.ReadData(1, "Password")); // dane z pliku excela - wiersz - nazwa kolumny
+            
+            //EAPageObject pageEA = pageLogin.Login("Zuru123", "Password123"); // dane wprowadzene w visualu 
 
+            pageEA.FillUserForm(ExcelLiblary.ReadData(1, "Initial"), ExcelLiblary.ReadData(1, "FirstName"), ExcelLiblary.ReadData(1,"MiddleName")); // dane wprowadzone z excela
+         
+            //pageEA.FillUserForm("M.Ż", "Mateusz", "Żarczyński"); //dane wprowadzene z visuala 
+            
             // initialize the page by calling its reference
 
             //EAPageObject page = new EAPageObject();

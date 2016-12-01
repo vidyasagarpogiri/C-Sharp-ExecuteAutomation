@@ -40,7 +40,7 @@ namespace SeleniumFirst
             txtInitial.EnterText(initial);
             txtFirstName.EnterText(firstName);
             txtMiddleName.EnterText(middleName);
-            
+            btnSave.Click();
             
             
             
